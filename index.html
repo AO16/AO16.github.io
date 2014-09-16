@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="home">
+	<h1>This is it! Andy's personal site.</h1>
+	<p>I am hoping to use this as a forum to try out some new development and potentially blog about it.</p>
+	<ul class="post-list">
+		{% for post in site.posts %}
+		<li>
+			<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+			<h2>
+				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</h2>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
