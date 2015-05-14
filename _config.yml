@@ -8,5 +8,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://andyorahoske.com" # the base hostname & protocol for your site
 github_username:  AO16
 
+gems:
+- jekyll-font-awesome
+
 # Build settings
 markdown: kramdown
