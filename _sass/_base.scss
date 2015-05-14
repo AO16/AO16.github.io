@@ -22,6 +22,8 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+html { position: relative; height: 100%; }
+
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
@@ -29,6 +31,7 @@ body {
     font-weight: 300;
     color: $text-color;
     background-color: $background-color;
+    padding-bottom: 85px;
 }
 
 
