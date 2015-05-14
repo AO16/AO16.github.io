@@ -95,7 +95,10 @@
 .site-footer {
     border-top: 1px solid $site-dark-grey;
     padding: $spacing-unit 0;
-    background: $red;
+    background: $sky-blue;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-heading {
@@ -246,6 +249,31 @@
     &.flush-left {
         padding-left: 0;
     }
+
+    @media only screen and (max-width: 450px) {
+        &.flush-right, &.flush-left {
+            padding: 0;
+        }
+    }
+}
+
+ul {
+    &.link-list {
+        margin-left: 0;
+        li {
+            display: inline-block;
+            i.fa {
+                font-size: 32px;
+                margin: 0 15px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 450px) {
+        &.link-list {
+            text-align: center;
+        }
+    }
 }
 
 .row {
@@ -258,7 +286,7 @@
     }
 
     .col-2 {
-        width: 50%;
+       width: 50%;
     }
 
     .col {
@@ -266,6 +294,26 @@
         *display: inline;
         vertical-align: top;
         zoom: 1;
+    }
+
+    @media only screen and (max-width: 450px) {
+        .col-2 {
+            width: 100%;
+            display: block;
+        }
+
+        .col-2:first-child {
+            order: 2;
+        }
+
+        .col-2:nth-child(2) {
+            order: 1;
+        }
+
+        & {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
 

@@ -6,7 +6,7 @@ $blue-green: #17a697;
 $dark-green: #0f5959;
 $light-grey: #bfd4d9;
 $site-dark-grey: #638ca6;
-$red: #d93240;
+$sky-blue: #3A89C9;
 
 $background-color: $light-grey;
 
@@ -22,6 +22,8 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+html { position: relative; height: 100%; }
+
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
@@ -29,6 +31,7 @@ body {
     font-weight: 300;
     color: $text-color;
     background-color: $background-color;
+    padding-bottom: 85px;
 }
 
 
