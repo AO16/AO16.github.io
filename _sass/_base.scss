@@ -1,6 +1,15 @@
 /**
  * Reset some basic elements
  */
+/*Color of traffic theme https://kuler.adobe.com/The-Color-of-Traffic-color-theme-2589902/*/
+$blue-green: #17a697;
+$dark-green: #0f5959;
+$light-grey: #bfd4d9;
+$site-dark-grey: #638ca6;
+$red: #d93240;
+
+$background-color: $light-grey;
+
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {

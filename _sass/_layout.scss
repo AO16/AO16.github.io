@@ -2,9 +2,10 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    border-top: 5px solid $dark-green;
+    border-bottom: 1px solid $dark-green;
     min-height: 56px;
+    background: $blue-green;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -19,7 +20,7 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $dark-green;
     }
 }
 
@@ -92,8 +93,9 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 1px solid $site-dark-grey;
     padding: $spacing-unit 0;
+    background: $red;
 }
 
 .footer-heading {
@@ -233,4 +235,41 @@
             font-size: 18px;
         }
     }
+}
+
+.inner {
+    padding: 1em;
+    &.flush-right {
+        padding-right: 0;
+    }
+
+    &.flush-left {
+        padding-left: 0;
+    }
+}
+
+.row {
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33%;
+    }
+
+    .col-2 {
+        width: 50%;
+    }
+
+    .col {
+        display: inline-block;
+        *display: inline;
+        vertical-align: top;
+        zoom: 1;
+    }
+}
+
+.profile-image-wrapper {
+    background: #fff;
+    padding: .5em;
 }
