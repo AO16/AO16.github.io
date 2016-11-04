@@ -1,0 +1,9 @@
+.site-content {
+  display: flex;
+  justify-content: center;
+  @at-root #{&}__inner {
+    max-width: 1200px;
+    padding: 1rem;
+    width: calc(100% - 1rem);
+  }
+}
