@@ -1,0 +1,16 @@
+@import '../variables';
+
+.link {
+  text-decoration: none;
+
+  @at-root #{&}--primaryColor {
+    color: $primaryColor;
+    &:visited {
+      color: $primaryColor;
+    }
+
+    &:focus, &:hover, &:active {
+      color: $darkenPrimaryColor;
+    }
+  }
+}
