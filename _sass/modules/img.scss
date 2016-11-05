@@ -1,0 +1,15 @@
+@import '../variables';
+
+.img {
+  @at-root #{&}--border {
+    border: $imgBorderWidth solid #fff;
+  }
+
+  @at-root #{&}--full {
+    width: 100%;
+
+    &.img--border {
+      width: calc(100% - #{$imgBorderWidth * 2});
+    }
+  }
+}

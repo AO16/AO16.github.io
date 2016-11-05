@@ -1,0 +1,25 @@
+$defaultFont: Arial, sans-serif;
+
+$backgroundColor: #f2f2f2;
+
+$primaryColor: #5a5255;
+$darkenPrimaryColor: darken($primaryColor, 20%);
+
+$secondaryColor: #1b85b8;
+$otherColors: #559e83, #ae5a41, #c3cb71;
+
+$linkedInColor: #0077B5;
+$darkenLinkedInColor: darken($linkedInColor, 20%);
+
+$facebookColor: #3b5998;
+$darkenFacebookColor: darken($facebookColor, 20%);
+
+$githubColor: #333;
+$darkenGithubColor: darken($githubColor, 20%);
+
+$twitterColor: #1da1f2;
+$darkenTwitterColor: darken($twitterColor, 20%);
+
+$imgBorderWidth: 10px;
+
+$paragraphMargin: 2rem;

@@ -1,0 +1,11 @@
+@import '../variables';
+
+.title {
+  @at-root #{&}--page {
+    color: $secondaryColor;
+  }
+
+  @at-root #{&}--header {
+    font-size: 2rem;
+  }
+}

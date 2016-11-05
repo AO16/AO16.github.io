@@ -1,0 +1,15 @@
+@import '../variables';
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 0;
+
+  @at-root #{&}--marginTop {
+    margin-top: $paragraphMargin;
+  }
+
+  @at-root #{&}--marginBottom {
+    margin-bottom: $paragraphMargin;
+  }
+}

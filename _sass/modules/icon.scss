@@ -1,0 +1,7 @@
+@import '../variables';
+
+.icon {
+  @at-root #{&}--large {
+    font-size: 2rem;
+  }
+}
