@@ -1,0 +1,18 @@
+@import '../variables';
+
+.container {
+  @at-root #{&}--padded {
+    padding: 2rem;
+  }
+
+  @at-root #{&}--footer {
+    background: $secondaryColor;
+    color: white;
+    justify-content: center;
+    width: 100%;
+    @at-root #{&}__inner {
+      max-width: 1000px;
+      width: calc(100% - 4rem);
+    }
+  }
+}

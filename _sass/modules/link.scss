@@ -1,7 +1,36 @@
 @import '../variables';
 
+@mixin socialLink($color, $hoverColor) {
+  color: $color;
+  fill: $color;
+  &:visited {
+    color: $color;
+    fill: $color;
+  }
+  &:focus, &:hover, &:active {
+    color: $hoverColor;
+    fill: $hoverColor;
+  }
+}
+
 .link {
   text-decoration: none;
+
+  @at-root #{&}--twitter {
+    @include socialLink($twitterColor, $darkenTwitterColor);
+  }
+
+  @at-root #{&}--facebook {
+    @include socialLink($facebookColor, $darkenFacebookColor);
+  }
+
+  @at-root #{&}--linkedin {
+    @include socialLink($linkedInColor, $darkenLinkedInColor);
+  }
+
+  @at-root #{&}--github {
+    @include socialLink($githubColor, $darkenGithubColor);
+  }
 
   @at-root #{&}--primaryColor {
     color: $primaryColor;

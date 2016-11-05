@@ -1,26 +1,6 @@
 @import '../variables';
 
 .icon {
-  @at-root #{&}--twitter {
-    color: $twitterColor;
-    fill: $twitterColor;
-  }
-
-  @at-root #{&}--facebook {
-    color: $facebookColor;
-    fill: $facebookColor;
-  }
-
-  @at-root #{&}--linkedin {
-    color: $linkedInColor;
-    fill: $linkedInColor;
-  }
-
-  @at-root #{&}--github {
-    color: $githubColor;
-    fill: $githubColor;
-  }
-
   @at-root #{&}--large {
     font-size: 2rem;
   }

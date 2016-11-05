@@ -6,14 +6,11 @@
   <body>
     <div class='site-content'>
       <div class='site-content__inner'>
-        {% include header.html %}
-
-        <div class="page-content">
+        <div class="page-content container--padded">
           {{ content }}
         </div>
-
-        {% include footer.html %}
       </div>
+      {% include footer.html %}
     </div>
   </body>
 

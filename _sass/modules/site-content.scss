@@ -1,9 +1,10 @@
 .site-content {
+  align-items: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  height: 100%;
   @at-root #{&}__inner {
+    flex: 1;
     max-width: 1000px;
-    padding: 1rem;
-    width: calc(100% - 1rem);
   }
 }
