@@ -6,7 +6,7 @@ summary: A break down of some of the new updates that I have made to my site, as
 
 I started with this site about a year ago when I was thinking about looking for a new job. It was essentially being used as a glorified business card. I have decided to come back to this site to try out some new things and write about some of the stuff I've been working on.
 
-This site is built usingn jekyll, so I'm not currently planning on writing a lot of new code for the site. The main things I'll be focusing on are:
+This site is built using jekyll, so I'm not currently planning on writing a lot of new code for the site. The main things I'll be focusing on are:
 
 - Sass and sass organization
 - New css techniques
