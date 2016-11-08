@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <div class='site-content'>
+      <div class='site-content__inner'>
+        <div class="page-content container--padded">
+          <a class='link link--primaryColor' href='{{ site.url }}'>Back Home</a>
+          {{ content }}
+        </div>
+      </div>
+      {% include footer.html %}
+    </div>
+  </body>
+
+</html>

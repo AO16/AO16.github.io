@@ -1,0 +1,10 @@
+ul {
+  list-style-position: inside;
+  padding: 1rem;
+  li {
+    padding-top: 0.5rem;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}

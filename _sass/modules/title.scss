@@ -1,7 +1,11 @@
 @import '../variables';
 
 .title {
-  @at-root #{&}--page {
+  @at-root #{&}--page  {
+    color: $secondaryColor;
+  }
+
+  @at-root h1  {
     color: $secondaryColor;
   }
 
