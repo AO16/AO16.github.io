@@ -43,7 +43,7 @@ layout: default
   {% for post in site.posts %}
     <div class='col-xs-12 post-summary'>
       <a class='post-summary__link link link--primaryColor' href='{{ post.url | prepend: site.baseurl | prepend: site.url }}'>
-        <div class='post-summary__date'>{{ post.date | date: '%B %d, %Y' }}</div>
+        <div class='post-summary__date'>{{ post.date | date: '%B %-d, %Y' }}</div>
         <h2 class='title--post'>{{ post.title | xml_escape }}</h2>
         <p class='paragraph'>
           {{ post.summary }}
