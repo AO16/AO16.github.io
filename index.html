@@ -33,7 +33,22 @@ layout: default
       </div>
     </div>
   </div>
-  <div class='col-12 col-sm-6 container--padded'>
-    <img class='img--full img--border' src="/images/profile.jpg" alt="Andy Orahoske" title="Andy Orahoske" />
+  <div class='col-12 col-sm-6'>
+    <div class='container--padded-top-bottom'>
+      <img class='img--full img--border' src="/images/profile.jpg" alt="Andy Orahoske" title="Andy Orahoske" />
+    </div>
   </div>
+</div>
+<div class='row'>
+  {% for post in site.posts %}
+    <div class='col-xs-12 post-summary'>
+      <a class='post-summary__link link link--primaryColor' href='{{ post.url | prepend: site.baseurl | prepend: site.url }}'>
+        <div class='post-summary__date'>{{ post.date | date: '%B %d, %Y' }}</div>
+        <h2 class='title--post'>{{ post.title | xml_escape }}</h2>
+        <p class='paragraph'>
+          {{ post.summary }}
+        </p>
+      </a>
+    </div>
+  {% endfor %}
 </div>

@@ -1,0 +1,16 @@
+@import '../variables';
+
+.post-summary {
+  width: 100%;
+  .post-summary__link {
+    background: $darkGreenColor;
+    display: block;
+    padding: 2rem;
+    &:hover {
+      background: $darkenDarkGreenColor;
+    }
+   }
+  .post-summary__date {
+    text-transform: uppercase;
+  }
+}
